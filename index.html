@@ -20,7 +20,7 @@
         <h2></h2>
 
         <section id="downloads">
-          <a href="https://github.com/" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+          <a href="https://github.com/caddyserver/caddy" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
       </div>
     </header>
@@ -32,9 +32,9 @@
 
 <p>LCMP（Linux + Caddy + MariaDB(MySQL) + PHP）包括：GNU/Linux 操作系统，Caddy Web 服务器，MariaDB(MySQL) 数据库，PHP 语言这四种核心组件以及其他相关辅助组件。 LCMP 是下一代全球最流行的 Web 运行环境组合之一，全部使用开源软件构建，配置简单，同时完全基于 https，提供最优性能的同时保障最佳安全性。LCMP 社区通过组合、优化和兼容性处理，将所有组件打包成一个高性能、易维护的 PHP 运行环境解决方案，确保提供最新 Web 运行环境的同时兼容运行绝大部分 PHP 应用程序。</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<pre><code>$ caddy file-server --domain example.com //Public file server over HTTPS
+$ caddy reverse-proxy --from example.com --to localhost:9000 //HTTPS reverse proxy
+$ caddy run //Run server with Caddyfile in working directory 
 </code></pre>
 
 <p>LCMP 社区推荐使用 Debian 10.7 + Caddy 2.0 + MariaDB 10.5.4 + PHP 7.4</p>
@@ -59,7 +59,7 @@ $ git checkout gh-pages
 <h3>
 <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>加入贡献</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Caddy 社区(LCMP社区）于2020年8月成立，计划翻译 CaddyServer 文档，建立交流论坛及交流群组，并持有  <a href="https://caddyserver.net" class="user-mention">caddyserver.net</a> 域名和  <a href="https://caddyserver.org" class="user-mention">caddyserver.org</a> 域名，计划用作中文社区和中文论坛。 对 CaddyServer 有兴趣的朋友可以加入群组联系群主。</p>
 
 <h3>
 <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>加入在线交流</h3>
